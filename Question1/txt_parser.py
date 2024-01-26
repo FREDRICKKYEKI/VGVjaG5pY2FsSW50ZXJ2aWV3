@@ -6,36 +6,7 @@ import re
 import copy
 from datetime import datetime
 import sys
-
-reg_dict = {
-    "name": "Name:(.+)",
-    "date_of_birth": r"Date\s?of\s?Birth:(.+)",
-    "age": "Age: (.+)",
-    "gender": "Gender: (.+)",
-    "occupation": "Job:(.+)",
-    "place_of_work": r"Place\s?of\s?Work:(.+)",
-    "education": "Education\n(.+)",
-    "location": {
-        "country": "Country: (.+)",
-        "state": "State: (.+)",
-        "city": "City: (.+)",
-        "zip_code": "Zip Code: (.+)"
-    },
-    "hobbies": "Hobbies: (.+)",
-    "favorite_music": "Favorite Music:(.+)",
-    "favorite_movies": "Favorite Movies: (.+)",
-    "languages_spoken": r"Languages\s+Spoken\n(.+)",
-    "pet": {
-        "type": "Pet Type:(.+)",
-        "name": r"Pet Type:[^\n]+\n+Name:\s*(.+)",
-        "breed": "Breed:(.+)",
-    },
-    "social_media": {
-        "Facebook": "Facebook:(.+)",
-        "Instagram": "Instagram:(.+)",
-        "Twitter": "Twitter:(.+)"
-        }
-}
+from .utils import reg_dict, flatten_dict
 
 
 def txt_to_dict(text):
@@ -74,7 +45,8 @@ def txt_to_dict(text):
         elif key in ["hobbies", "hobbies", "favorite_music", "favorite_movies",
                      "languages_spoken"]:
             return_dict[key] = [w.strip() for w in return_dict[key].split(",")]
-    return return_dict
+
+    return flatten_dict(return_dict)
 
 
 def parse_txt(filename):

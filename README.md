@@ -33,7 +33,7 @@ output:
 
 ```bash
 fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1.json_parser Question1/john/john.json
-{'name': 'John Doe', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'pet': {'breed': 'Golden Retriever', 'type': 'Dog', 'name': 'Buddy'}, 'gender': 'Male', 'age': 34, 'place_of_work': 'Creative Design Studio Inc.', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'social_media': {'Twitter': '@johnD_tweets', 'Facebook': 'john.doe34', 'Instagram': 'john_the_designer'}, 'location': {'country': 'United States', 'state': 'California', 'city': 'San Francisco', 'zip_code': '94103'}, 'hobbies': ['Photography', 'Hiking', 'Reading'], 'languages_spoken': ['English', 'Spanish'], 'education': "Bachelor's in Fine Arts", 'favorite_music': ['Jazz', 'Classical'], 'occupation': 'Graphic Designer'}
+{'place_of_work': 'Creative Design Studio Inc.', 'pet_type': 'Dog', 'hobbies': ['Photography', 'Hiking', 'Reading'], 'social_media_Twitter': '@johnD_tweets', 'education': "Bachelor's in Fine Arts", 'occupation': 'Graphic Designer', 'location_city': 'San Francisco', 'location_country': 'United States', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'social_media_Facebook': 'john.doe34', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'favorite_music': ['Jazz', 'Classical'], 'pet_breed': 'Golden Retriever', 'languages_spoken': ['English', 'Spanish'], 'location_state': 'California', 'pet_name': 'Buddy', 'name': 'John Doe', 'gender': 'Male', 'age': 34, 'location_zip_code': '94103', 'social_media_Instagram': 'john_the_designer'}
 ```
 
 ---
@@ -43,8 +43,8 @@ fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1
 output:
 
 ```bash
-    fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1.txt_parser Question1/john/john.txt
-    {'name': 'John Doe', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'pet': {'breed': 'Golden Retriever', 'type': 'Dog', 'name': 'Buddy'}, 'gender': 'Male', 'age': 34, 'place_of_work': 'Creative Design Studio Inc.', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'social_media': {'Twitter': '@johnD_tweets', 'Facebook': 'john.doe34', 'Instagram': 'john_the_designer'}, 'location': {'country': 'United States', 'state': 'California', 'city': 'San Francisco', 'zip_code': '94103'}, 'hobbies': ['Photography', 'Hiking', 'Reading'], 'languages_spoken': ['English', 'Spanish'], 'education': "Bachelor's in Fine Arts", 'favorite_music': ['Jazz', 'Classical'], 'occupation': 'Graphic Designer'}
+fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1.txt_parser Question1/john/john.txt
+{'place_of_work': 'Creative Design Studio Inc.', 'pet_type': 'Dog', 'hobbies': ['Photography', 'Hiking', 'Reading'], 'social_media_Twitter': '@johnD_tweets', 'education': "Bachelor's in Fine Arts", 'occupation': 'Graphic Designer', 'location_city': 'San Francisco', 'location_country': 'United States', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'social_media_Facebook': 'john.doe34', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'favorite_music': ['Jazz', 'Classical'], 'pet_breed': 'Golden Retriever', 'languages_spoken': ['English', 'Spanish'], 'location_state': 'California', 'pet_name': 'Buddy', 'name': 'John Doe', 'gender': 'Male', 'age': 34, 'location_zip_code': '94103', 'social_media_Instagram': 'john_the_designer'}
 ```
 
 ---
@@ -55,7 +55,7 @@ output:
 
 ```bash
 fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1.html_parser Question1/john/john.html
-{'name': 'John Doe', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'pet': {'breed': 'Golden Retriever', 'type': 'Dog', 'name': 'Buddy'}, 'gender': 'Male', 'age': 34, 'place_of_work': 'Creative Design Studio Inc.', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'social_media': {'Twitter': '@johnD_tweets', 'Facebook': 'john.doe34', 'Instagram': 'john_the_designer'}, 'location': {'country': 'United States', 'state': 'California', 'city': 'San Francisco', 'zip_code': '94103'}, 'hobbies': ['Photography', 'Hiking', 'Reading'], 'languages_spoken': ['English', 'Spanish'], 'education': "Bachelor's in Fine Arts", 'favorite_music': ['Jazz', 'Classical'], 'occupation': 'Graphic Designer'}
+{'place_of_work': 'Creative Design Studio Inc.', 'pet_type': 'Dog', 'hobbies': ['Photography', 'Hiking', 'Reading'], 'social_media_Twitter': '@johnD_tweets', 'education': "Bachelor's in Fine Arts", 'occupation': 'Graphic Designer', 'location_city': 'San Francisco', 'location_country': 'United States', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'social_media_Facebook': 'john.doe34', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'favorite_music': ['Jazz', 'Classical'], 'pet_breed': 'Golden Retriever', 'languages_spoken': ['English', 'Spanish'], 'location_state': 'California', 'pet_name': 'Buddy', 'name': 'John Doe', 'gender': 'Male', 'age': 34, 'location_zip_code': '94103', 'social_media_Instagram': 'john_the_designer'}
 ```
 
 ---
@@ -76,7 +76,7 @@ output:
 
 ```bash
 fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python3 -m Question1.pdf_parser Question1/john/john.pdf
-{'name': 'John Doe', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'age': 34, 'gender': 'Male', 'occupation': 'Graphic  Designer', 'place_of_work': 'CreativeDesign  Studio Inc.', 'education': "Bachelor'sin Fine Arts", 'location': {'country': 'United States', 'state': '', 'city': '', 'zip_code': ''}, 'hobbies': ['Photography', 'Hiking', 'Reading'], 'favorite_music': ['Jazz', 'Classical'], 'favorite_movies': ['Inception', 'The Grand   Budapest  Hotel'], 'languages_spoken': ['English', 'Spanish'], 'pet': {'type': 'Dog', 'name': 'Buddy', 'breed': 'Golden  Retriever'}, 'social_media': {'Facebook': 'john.doe34', 'Instagram': 'john_the_designer', 'Twitter': '@johnD_tweets'}}
+{'name': 'John Doe', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'age': 34, 'gender': 'Male', 'occupation': 'Graphic  Designer', 'place_of_work': 'CreativeDesign  Studio Inc.', 'education': "Bachelor'sin Fine Arts", 'hobbies': ['Photography', 'Hiking', 'Reading'], 'favorite_music': ['Jazz', 'Classical'], 'favorite_movies': ['Inception', 'The Grand   Budapest  Hotel'], 'languages_spoken': ['English', 'Spanish'], 'location_country': 'United States', 'location_state': 'California', 'location_city': 'San Francisco', 'location_zip_code': '', 'pet_type': 'Dog', 'pet_name': 'Buddy', 'pet_breed': 'Golden  Retriever', 'social_media_Facebook': 'john.doe34', 'social_media_Instagram': 'john_the_designer', 'social_media_Twitter': '@johnD_tweets'}
 ```
 
 ---
@@ -87,7 +87,7 @@ output
 
 ```bash
 fredrick_ubuntu@FRED:/mnt/c/Users/FRED/Technical Interview$ python2 -m Question1.docx_parser_ Question1/john/john.docx
-{'name': 'John Doe', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'pet': {'breed': 'Golden Retriever', 'type': 'Dog', 'name': 'Buddy'}, 'gender': 'Male', 'age': 34, 'place_of_work': 'Creative Design Studio Inc.', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'social_media': {'Twitter': '@johnD_tweets', 'Facebook': 'john.doe34', 'Instagram': 'john_the_designer'}, 'location': {'country': 'United States', 'state': 'California', 'city': 'San Francisco', 'zip_code': '94103'}, 'hobbies': ['Photography', 'Hiking', 'Reading'], 'languages_spoken': ['English', 'Spanish'], 'education': "Bachelor's in Fine Arts", 'favorite_music': ['Jazz', 'Classical'], 'occupation': 'Graphic Designer'}
+{'place_of_work': 'Creative Design Studio Inc.', 'pet_type': 'Dog', 'hobbies': ['Photography', 'Hiking', 'Reading'], 'social_media_Twitter': '@johnD_tweets', 'education': "Bachelor's in Fine Arts", 'occupation': 'Graphic Designer', 'location_city': 'San Francisco', 'location_country': 'United States', 'favorite_movies': ['Inception', 'The Grand Budapest Hotel'], 'social_media_Facebook': 'john.doe34', 'date_of_birth': datetime.datetime(1989, 7, 15, 0, 0), 'favorite_music': ['Jazz', 'Classical'], 'pet_breed': 'Golden Retriever', 'languages_spoken': ['English', 'Spanish'], 'location_state': 'California', 'pet_name': 'Buddy', 'name': 'John Doe', 'gender': 'Male', 'age': 34, 'location_zip_code': '94103', 'social_media_Instagram': 'john_the_designer'}
 ```
 
 ---

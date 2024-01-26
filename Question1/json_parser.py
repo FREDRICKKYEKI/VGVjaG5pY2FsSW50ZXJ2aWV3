@@ -5,6 +5,7 @@ This module contains the `.json` parser functions and its utility functions
 import sys
 import json
 from datetime import datetime
+from utils import flatten_dict
 
 
 def encoder(data):
@@ -39,7 +40,7 @@ def parse_json(filename):
     # age -> int()
     return_dict["age"] = int(return_dict["age"])
 
-    return return_dict
+    return flatten_dict(return_dict)
 
 
 if __name__ == "__main__":
