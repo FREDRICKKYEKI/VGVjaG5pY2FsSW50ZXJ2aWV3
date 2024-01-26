@@ -13,17 +13,18 @@ Important:
        terminal an array of 20 dictionaries, each encapsulating metadata from
        an individual case.
 """
-from bs4 import BeautifulSoup
 import json
+import sys
+from bs4 import BeautifulSoup
 
 
-def scrape_cases():
+def scrape_cases(filename):
     """Extract cases from the given html page
+    filename: `str` name/path of file to be parsed
     """
-    file = "ftc.mhtml"
     return_list = []
 
-    with open(file, "r") as f:
+    with open(filename, "r") as f:
         html_file = f.read()
 
     # general clean up
@@ -86,4 +87,9 @@ def scrape_cases():
 
 
 if __name__ == "__main__":
-    print(json.dumps(scrape_cases()).replace("=\r\n", ""))
+    if len(sys.argv[1:]):
+        filename = sys.argv[1]
+        print(json.dumps(scrape_cases(filename)).replace("=\r\n", ""))
+    else:
+        print("usage: {} [filename]".format(sys.argv[0]))
+        print("- This script parses 'ftc.mhtml' file into a dict")

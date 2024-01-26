@@ -39,7 +39,7 @@ def parse_json(filename):
     # age -> int()
     return_dict["age"] = int(return_dict["age"])
 
-    print(return_dict)
+    return return_dict
 
 
 if __name__ == "__main__":

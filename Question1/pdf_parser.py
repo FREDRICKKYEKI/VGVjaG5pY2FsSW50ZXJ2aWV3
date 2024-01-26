@@ -4,7 +4,7 @@ This module contains the `.pdf` parser function and its utility functions
 """
 import sys
 from pypdf import PdfReader
-from txt_parser import txt_to_dict
+from .txt_parser import txt_to_dict
 
 
 def parse_pdf(filename):
